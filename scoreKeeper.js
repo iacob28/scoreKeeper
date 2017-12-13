@@ -12,7 +12,6 @@ var winningScore = 0;
 var gameOver = false;
 
 
-
 p1Button.addEventListener("click", function(){
 
     if(!gameOver){
@@ -46,12 +45,13 @@ p2Button.addEventListener("click", function(){
 function reset(){
     p1Score = 0;
     p2Score = 0;
-
+    
     p1ScoreDisplay.textContent = p1Score;
     p2ScoreDisplay.textContent = p2Score;
-
+    
     p1ScoreDisplay.classList.remove("winnerColor");
     p2ScoreDisplay.classList.remove("winnerColor");
+    
 
     gameOver = false;
 }
